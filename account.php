@@ -1,5 +1,10 @@
 <?php
-    session_start();
+
+session_start();
+if(!$_SESSION['loggedIn']) {
+        header('Location: account.php');
+        exit;
+}
 ?>
 
 <!DOCTYPE html>
@@ -14,4 +19,3 @@
 </html>
 
 <?php
-    session_destroy();
