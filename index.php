@@ -1,7 +1,3 @@
-<?php
-    session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +12,3 @@
     </form>
 </body>
 </html>
-
-<?php
-    session_destroy();

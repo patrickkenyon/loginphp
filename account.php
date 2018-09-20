@@ -1,4 +1,5 @@
 <?php
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -11,3 +12,6 @@
     <h1>DO PLEASE HAVE A GOOD LOOK AT ALL OF MY BANK DETAILS AND STEAL MY MONEY</h1>
 </body>
 </html>
+
+<?php
+    session_destroy();
