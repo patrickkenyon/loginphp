@@ -1,6 +1,8 @@
 <?php
-$_POST['username'];
 
-//if statement here to check if inputted data matches stored data. Need to hash password stored here.
+if(password_verify($_POST['password'], '$2y$10$l0HdvUusZt8n6O6qEE2ixOriNiL4dUu6nM1t1RgthbwTwmVQ55ENm') && ($_POST['username'] == 'patrickkenyon')) {
+    header('Location: account.php');
+} else {
+    header('Location: index.php');
+}
 
-//password_verify()
